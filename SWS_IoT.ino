@@ -106,7 +106,7 @@ void loop() {
       myserv.write(135);
       tb.sendTelemetryFloat("Metal", metal);
     }
-    else {
+    else if (categoria == 3) {
       plastico++;
       desecho = "Plastico";
       myserv.write(180);
@@ -123,17 +123,18 @@ void loop() {
     if (msg.text.equalsIgnoreCase("000333")) {
       Serial.println("1");
       puntos[0]++;
-      miBot.sendMessage(msg.sender.id, "Log test \nNombre: "+String(nombres[0])+"\nPuntos: "+String(puntos[0])+"\nDesecho: "+String(desecho));
+      miBot.sendMessage(msg.sender.id, "•❲♻️❳︶︶︶︶︶︶︶︶︶︶︶❲♻️❳•\n │ㅤㅤ──╯꒰☁︎ ꒱ ɴᴇᴡꜱ ꒰☁︎ ꒱╰──\n │✄. . . . . . . . . . . . . . . . . . . . . . . ↻° : ﹢\n │ㅤ↬xㅤ✰;; Registro - Log ✦ʾʾ . .\n │✄. . . . . . . . . . . . . . . . . . .ⵓ‧˖˚࿔₊˚\n ✦ Nombre: "+String(nombres[0])+" ✦\n ✦ Puntos: "+String(puntos[0])+" ✦\n ✦ Desecho: "+String(desecho)+" ✦\n ꜱᴀᴍꜱᴜɴɢ\n •❲♻️❳︶︶︶︶︶︶︶︶︶︶︶❲♻️❳•");
+      //miBot.sendMessage(msg.sender.id, "Log test \nNombre: "+String(nombres[0])+"\nPuntos: "+String(puntos[0])+"\nDesecho: "+String(desecho));
       band = false;
     }
     else if (msg.text.equalsIgnoreCase("000444")) {
       Serial.println("1");
       puntos[1]++;
-      miBot.sendMessage(msg.sender.id, "Log test \nNombre: "+String(nombres[1])+"\nPuntos: "+String(puntos[1])+"\nDesecho: "+String(desecho));
+      miBot.sendMessage(msg.sender.id, "•❲♻️❳︶︶︶︶︶︶︶︶︶︶︶❲♻️❳•\n │ㅤㅤ──╯꒰☁︎ ꒱ ɴᴇᴡꜱ ꒰☁︎ ꒱╰──\n │✄. . . . . . . . . . . . . . . . . . . . . . . ↻° : ﹢\n │ㅤ↬xㅤ✰;; Registro - Log ✦ʾʾ . .\n │✄. . . . . . . . . . . . . . . . . . .ⵓ‧˖˚࿔₊˚\n ✦ Nombre: "+String(nombres[1])+" ✦\n ✦ Puntos: "+String(puntos[1])+" ✦\n ✦ Desecho: "+String(desecho)+" ✦\n ꜱᴀᴍꜱᴜɴɢ\n •❲♻️❳︶︶︶︶︶︶︶︶︶︶︶❲♻️❳•");
       band = false;
     }
     else {
-     miBot.sendMessage(msg.sender.id, "Bienbenido " + msg.sender.firstName + ",intenta usar: encender o apagar");
+     miBot.sendMessage(msg.sender.id, "•❲♻️❳︶︶︶︶︶︶︶︶︶︶︶❲♻️❳•\n │ㅤㅤ──╯꒰☁︎ ꒱ Error en Registro ꒰☁︎ ꒱╰──\n │✄. . . . . . . . . . . . . . . . . . . . . . . ↻° : ﹢\n ✦ Debe introducir el token de usuario para el registro de puntos ✦\n ꜱᴀᴍꜱᴜɴɢ\n •❲♻️❳︶︶︶︶︶︶︶︶︶︶︶❲♻️❳•");
     }
   }
 
