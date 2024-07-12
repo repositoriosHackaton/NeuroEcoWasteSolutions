@@ -55,6 +55,15 @@
     <img src="Img/model_architecture1.png" alt="Arquitectura del modelo principal">
   </p>
 
+  <p align="center">
+    <strong>Arquitectura del funcionamiento de la estación</strong>
+  </p>
+
+
+  <p align="center">
+    <img src="Img/project_architecture.jpg" alt="Arquitectura de la estación">
+  </p>
+
   <br>
 
 
@@ -138,7 +147,33 @@
       
   El modelo se evalúa utilizando la precisión, obteniendo una precisión global del {valor}%.
 
+* Funcionalidades extra:
 
+  - Se utiliza el software Arduino para la programación del micro controlador que se encargará de la estación, conexión de las API por medio de internet y la movilización interna. Además que mediante una conexión serial doble el micro controlador le mandará la señal de activación para la ejecución de la red neuronal donde esta misma le retornará cierta información requerida como el tipo de desecho para la distribución del dato a las diferentes APIs.
 
+  - Uso de la API de Telegram
+    - Se utiliza la API de telegram para le elaboración de un bot propio del proyecto para que el usuario coloque su respectivo token para la activación del sistema tanto interno de la red neuronal como la de la estación física, además de llevar el control de puntos acumulados por usuario.
+   
+  - Uso de la API de ThingsBoard
+    - Se utiliza para llevar un monitoreo de la cantidad de basura que se va almacenando en conjunto sobre que tipo de basura es en tiempo real, además con su debida configuración para el proposito del proyecto. Esta función añadida está orientada al operador de nuestro proyecto.
 
+<br>
 
+<p align="center">
+    <strong>Chatbot usado por telegram</strong>
+  </p>
+
+  
+  <p align="center">
+    <img src="Img/Chatbot_telegram.jpeg" alt="Chatbot_Telegram">
+  </p>
+
+  <p align="center">
+    <strong>Panel usando los servicios de thinsgabord</strong>
+  </p>
+
+  <p align="center">
+    <img src="Img/Panel_thingsboard.jpeg" alt="Panel_thingsboard">
+  </p>
+
+  <br>
